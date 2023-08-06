@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <form id="myForm" >
+            <div>
+                <label>Username: </label>
+                <input type="text" title="Username" id="name" maxlength="12">
+                <span id="uname"></span>
+            </div>
+            <button type="submit" id="sub">Submit</button>
+        </form>
+        <script>
+            var form=document.getElementById("myForm");
+            var sub=document.getElementById("sub");
+
+           sub.addEventListener("click",function(event){
+                event.preventDefault();
+                var n=document.getElementById("name").value;
+                var m=document.getElementById("uname");
+                if(n.length<8){
+                   
+                    document.getElementById("uname").innerHTML=("Username must have 8 character");
+                }
+                else{
+                    form.submit();
+                    alert ("submitted");
+                }
+
+           });
+        </script>
+    </body>
+</html>

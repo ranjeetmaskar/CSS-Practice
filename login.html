@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <form id="myForm" onsubmit="return login()">
+            <h1 id="demo">Login Form</h1>
+            <div>
+                <label >Username :</label> 
+                <input id="uname" type="text" maxlength="15">
+                <span id="usererror"></span>
+            </div><br>
+                <label >Password :</label><input id="pw" type="Password"><br><br>
+                <label>Email : </label> <input id="mail" type=email>
+                <input type="submit" ></input>
+                
+        </form>
+    </body>
+    <script>
+       
+        function login(){
+        //     var a="ranjeet"
+        //     var b="123" 
+        //    // var x=document.getElementById("uname").value;
+        //     var y=document.getElementById("pw").value;
+        //     var z=document.getElementById("mail").value;
+        //     console.log(x);
+        //     console.log(y); 
+        //     console.log(z);
+        //     if(x=="" || y=="" || z==""){
+        //        window.alert("Please enter username, password and Mail");               
+        //     }
+        //     else{
+        //     if( x==a && y==b){
+        //         // console.log(x);
+        //         // console.log(y);
+        //         // console.log(a);
+        //         // console.log(b);
+        //        window.alert("Login Successfully");
+               
+               
+        //        console.log("Hello"+ x);
+        //    }
+        //    else if( x!=a || y!=b){
+        //        window.alert("Please enter valid username and password");    
+        //    }
+        //    }  
+        var m=document.getElementById("uname").value; 
+        console.log(m)
+        var n=document.getElementById("usererror")
+        console.log("in the function")
+        if(n.length<8)
+        {
+            console.log("in if part")
+            n.innerHTML("username must be 8 character");
+        }  
+        else{
+            n.innerHTML="";
+        }           
+        }
+        
+    </script>
+
+</html>

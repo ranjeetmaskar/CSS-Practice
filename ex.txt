@@ -1,0 +1,4 @@
+I am programmer"\n"
+I am Msc student"\n"
+i am learning JavaScript"\n"
+My name is

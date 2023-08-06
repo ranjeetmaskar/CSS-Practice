@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <h2>The XMLHttpRequest Object</h2>
+    
+    <button type="button" onclick="Req()">Change the content</button>
+    <p id="demo"></p>
+    <script>
+        // function Change(){
+        //     var xhttp=new XMLHttpRequest();
+        //     console.log(xhttp)
+        //     xhttp.onreadystatechange = function(){
+        //         if (this.readyState==4 && this.status==200) {
+        //             document.getElementById("demo").innerHTML=this.responseText;                    
+        //         }
+        //     }
+        //     xhttp.open("GET","ex.txt",true);
+        //     xhttp.send()
+        //}
+
+        function Req(){
+            //create object
+            var x=new XMLHttpRequest();
+            x.onreadystatechange=function(){
+                if (this.readyState==4 && this.status==200) {
+                    document.getElementById("demo").innerHTML=this.responseText;
+                }
+            }
+            //Send request data to the server
+            x.open("GET","ex.txt",true);
+            x.send()
+        }
+
+    </script>
+    
+</body>
+</html>

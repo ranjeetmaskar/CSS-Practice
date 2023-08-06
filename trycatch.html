@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TryCatch</title>
+</head>
+<body>
+    <label>Username: </label>
+    <input type="text" name="username" id="uname" placeholder="Enter username">
+    <span id="spn"></span><br>
+    <input type="password" name="password" id="pwd" placeholder="Enter password">
+    <span id="spn2"></span>
+    <button id="submit" type="button" onclick="Validation()">Submit</button><br>
+    
+    <span id="spn1"></span>
+
+    <script>
+        function Validation(){
+            var x=document.getElementById("uname").value;
+            var y=document.getElementById("spn");
+            var z=document.getElementById("pwd").value;
+            var o= z.length
+            var p= x.length
+            //console.log(o)
+            var w=document.getElementById("spn2");
+        try {
+            if (x=="") throw "is empty"
+            if(p>0) throw ""
+            if(x>5) throw " is high"
+            if(x<10) throw "is low"
+           
+        } catch (error) {
+            y.innerHTML=error
+           
+        }
+        try {
+            if (z=="") throw "is empty password"
+            if (z<8) throw "weak password"
+            //console.log(z)
+            if(o>8) throw "Strong Pass"
+            if(o<8) throw "weak pass"
+        } catch (error) {
+            w.innerHTML=error
+        }
+        finally{
+            document.getElementById("spn1").innerHTML="Thank You"
+        }}
+    </script>
+</body>
+</html>

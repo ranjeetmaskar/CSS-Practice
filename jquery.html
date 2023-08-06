@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <style>
+       .green{
+           font-style: italic;
+           color: brown;
+       }
+       .big{
+            font-size: large;
+            font-weight: bold;
+       }
+   </style>
+</head>
+<body>
+    <h1>This is first example of jQuery</h1>
+    <!-- <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Sourabh</td>
+            <td>24</td>    
+        </tr>
+        <tr>
+            <td>Ranjeet</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Manoj</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Jayant</td>
+            <td>23</td>
+        </tr>
+    </table> -->
+
+     <!--<input type="text">
+    <input type="number"> -->
+    <!--<p id="a">I am a programmer</p>-->
+    
+    <!--<p class="b">Hello i am ranjeet maskar</p>
+
+    <p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>-->
+
+    
+    <!-- <button id="first">request</button>
+   <button id="second">Stop</button> 
+    <div style="background:#98bf21;height:100px;width:100px;position:relative;">Hello Ranjeet</div>-->
+
+    <!--<div id="div">1st content</div>
+    username: <input type="text" id="uname">-->
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    
+    <div>This is some important text!</div><br>
+    
+    <button>Add classes to elements</button>
+    
+    <script>
+        // $(document).ready(function() {
+        //     $("button").click(function(){
+        //         $(this).hide();
+        //     })            
+        // });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").toggleClass("green")    //addClass , removeClass,  toggleClasss
+                $("div").toggleClass("big")       //addClass , removeClass , toggleClass
+            })
+
+
+        //     $("#first").click(function(){
+        //         $("a[target='_blank'").hide()
+        //     })
+        // })
+        
+        // $(document).ready(function(){
+        //     $("#first").click(function(){
+        //         $("p").hide(1500)
+        //     })
+        //     $("#second").click(function(){
+        //         $("p").show("fast")
+        //     })
+            
+        // })
+
+        //$("tr:even").css("background-color", "yellow");
+
+        // $("#a").hover(function(){
+        //     alert("Enterd in p")
+        // },
+        // function(){
+        //     alert("bye, bye")
+        // })
+        // });
+
+        // $("input").focus(function(){
+        //     $(this).css("background-color","red")
+        // })
+        // $("input").blur(function(){
+        //     $(this).css("background-color","black")
+        // })
+
+        // $("p").on({mouseenter:function(){
+        //     $(this).css("background-color","lightgray")
+        // },
+         //mouseleave:function(){
+        //     $(this).css("background-color","lightblue")
+        // },
+        // click:function(){
+        //     $(this).css("background-color","yellow")
+        // }})
+
+        // $("#first").click(function(){
+        //     $("div").at
+        // });
+
+        // $("#first").click(function(){            
+        //     var div = $("div");
+        //     div.animate({height:'300px',opacity:"0.5"},"2000");
+        //     div.animate({width:"300px",opacity:"0.1"},"2000");
+        //     div.animate({height:"250px",opacity:"0.8"},"2000");
+        //     div.animate({width:"250px",opacity:"0.2"},"2000");
+        //     div.animate({color:"red",fontSize:"5em",opacity:"1"},"2000")
+        
+        // })
+
+        // $("#uname").keyup(function(){
+        //     //console.log(this.value)
+        //     this.value=this.value.toUpperCase()
+        //     //console.log(this.value)
+        // })
+    })    
+    
+    </script>
+</body>
+</html>

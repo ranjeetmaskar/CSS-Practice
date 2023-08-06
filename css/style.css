@@ -1,0 +1,92 @@
+/* div{
+    color:rgb(233, 106, 22);
+    font-style: italic;
+} */
+/* body{
+    background-image: url('../img/back.jpg' );
+    background-repeat: no-repeat; 
+    background:rgb(212, 198, 171) url("../img/back.jpg") no-repeat right top; 
+} */
+/* .nav{
+    border-style: dashed;
+    border-width: 2px; 
+    border:firebrick solid ;
+  
+} */
+.nav{
+    background:rg
+    b(223, 245, 223);  
+    text-transform: uppercase;
+    text-decoration: none;
+    word-spacing: ;
+ 
+}
+.items{
+    background:rgb(10, 10, 7);
+    color: aliceblue;
+    padding: 20px; 
+    padding-left: 150px;
+    word-spacing: 1em;
+   
+    
+}
+.item{
+    display: inline-flex;
+      
+} 
+.item:hover{
+    color: rgb(201, 25, 25);
+    font-size: 22px;
+    position: relative;
+}
+/* .classs {
+    background-color: rgb(238, 16, 16);
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    border: 15px solid green;
+    padding: 25px;
+    margin: 60px; 
+    outline: 5px solid black;
+     
+ }
+.classs a{
+    text-decoration:none;
+    letter-spacing: 5px;
+} 
+a:hover{
+    background-color: rgb(196, 185, 40);
+    font-size: 20px;
+    font-style: italic;
+}*/
+
+/* .tushar{
+    color: red;
+    border-collapse: collapse;
+    font-family:fantasy;
+    font-style: italic;
+    font-size: 30px;
+    background-repeat: no-repeat;   
+} */
+/* table {
+    width: 75%;
+    background-color: rgb(153, 224, 83);
+    border:red dashed 3px;
+
+} */
+.city{
+    border: rgb(3, 3, 3)  dashed 5px;
+    border-bottom: deeppink solid 3px
+    ;
+}
+/* 
+li:first-child{
+    font-size:25px;
+    color: brown;
+    font-style: italic;
+} */
+
+#frd{
+    display: flex;
+    flex-direction: column;
+}
